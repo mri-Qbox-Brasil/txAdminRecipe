@@ -8,7 +8,7 @@ description: A FiveM core with a load of bloat.
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/qbox-project/txAdminRecipe
+    src: https://github.com/mri-Qbox-Brasil/txAdminRecipe
     ref: main
     dest: ./tmp/qbox
 
@@ -47,7 +47,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/safecracker
     ref: main
-    src: https://github.com/qbox-project/safecracker
+    src: https://github.com/mri-Qbox-Brasil/safecracker
 
   - action: download_file
     path: ./tmp/screenshot-basic.zip
@@ -59,7 +59,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/mhacking
     ref: main
-    src: https://github.com/qbox-project/mhacking
+    src: https://github.com/mri-Qbox-Brasil/mhacking
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -72,7 +72,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
     ref: master
-    src: https://github.com/qbox-project/PolyZone
+    src: https://github.com/mri-Qbox-Brasil/PolyZone
 
   - action: download_github
     dest: ./resources/[standalone]/ultra-voltlab
@@ -123,7 +123,7 @@ tasks:
   - action: download_github
     dest: ./resources/[voice]/qbx_radio
     ref: main
-    src: https://github.com/qbox-project/qbx_radio
+    src: https://github.com/mri-Qbox-Brasil/qbx_radio
 
   # Downloading Qbox resources
   - action: download_file
@@ -136,12 +136,12 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
     ref: main
-    src: https://github.com/qbox-project/qbx_scoreboard
+    src: https://github.com/mri-Qbox-Brasil/qbx_scoreboard
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_adminmenu
     ref: main
-    src: https://github.com/qbox-project/qbx_adminmenu
+    src: https://github.com/mri-Qbox-Brasil/qbx_adminmenu
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -149,32 +149,32 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehiclesales
     ref: main
-    src: https://github.com/qbox-project/qbx_vehiclesales
+    src: https://github.com/mri-Qbox-Brasil/qbx_vehiclesales
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehicleshop
     ref: main
-    src: https://github.com/qbox-project/qbx_vehicleshop
+    src: https://github.com/mri-Qbox-Brasil/qbx_vehicleshop
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_houserobbery
     ref: main
-    src: https://github.com/qbox-project/qbx_houserobbery
+    src: https://github.com/mri-Qbox-Brasil/qbx_houserobbery
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_prison
     ref: main
-    src: https://github.com/qbox-project/qbx_prison
+    src: https://github.com/mri-Qbox-Brasil/qbx_prison
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_hud
     ref: main
-    src: https://github.com/qbox-project/qbx_hud
+    src: https://github.com/mri-Qbox-Brasil/qbx_hud
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_seatbelt
     ref: main
-    src: https://github.com/qbox-project/qbx_seatbelt
+    src: https://github.com/mri-Qbox-Brasil/qbx_seatbelt
 
   - action: download_file
     path: ./tmp/qbx_management.zip
@@ -186,37 +186,37 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
     ref: main
-    src: https://github.com/qbox-project/qbx_weed
+    src: https://github.com/mri-Qbox-Brasil/qbx_weed
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_lapraces
     ref: main
-    src: https://github.com/qbox-project/qbx_lapraces
+    src: https://github.com/mri-Qbox-Brasil/qbx_lapraces
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_houses
     ref: main
-    src: https://github.com/qbox-project/qbx_houses
+    src: https://github.com/mri-Qbox-Brasil/qbx_houses
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_garages
     ref: main
-    src: https://github.com/qbox-project/qbx_garages
+    src: https://github.com/mri-Qbox-Brasil/qbx_garages
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_ambulancejob
     ref: main
-    src: https://github.com/qbox-project/qbx_ambulancejob
+    src: https://github.com/mri-Qbox-Brasil/qbx_ambulancejob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_medical
     ref: main
-    src: https://github.com/qbox-project/qbx_medical
+    src: https://github.com/mri-Qbox-Brasil/qbx_medical
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehiclefailure
     ref: main
-    src: https://github.com/qbox-project/qbx_vehiclefailure
+    src: https://github.com/mri-Qbox-Brasil/qbx_vehiclefailure
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -224,67 +224,67 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_radialmenu
     ref: main
-    src: https://github.com/qbox-project/qbx_radialmenu
+    src: https://github.com/mri-Qbox-Brasil/qbx_radialmenu
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_policejob
     ref: main
-    src: https://github.com/qbox-project/qbx_policejob
+    src: https://github.com/mri-Qbox-Brasil/qbx_policejob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_apartments
     ref: main
-    src: https://github.com/qbox-project/qbx_apartments
+    src: https://github.com/mri-Qbox-Brasil/qbx_apartments
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehiclekeys
     ref: main
-    src: https://github.com/qbox-project/qbx_vehiclekeys
+    src: https://github.com/mri-Qbox-Brasil/qbx_vehiclekeys
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_mechanicjob
     ref: main
-    src: https://github.com/qbox-project/qbx_mechanicjob
+    src: https://github.com/mri-Qbox-Brasil/qbx_mechanicjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vineyard
     ref: main
-    src: https://github.com/qbox-project/qbx_vineyard
+    src: https://github.com/mri-Qbox-Brasil/qbx_vineyard
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_scrapyard
     ref: main
-    src: https://github.com/qbox-project/qbx_scrapyard
+    src: https://github.com/mri-Qbox-Brasil/qbx_scrapyard
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_towjob
     ref: main
-    src: https://github.com/qbox-project/qbx_towjob
+    src: https://github.com/mri-Qbox-Brasil/qbx_towjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_streetraces
     ref: main
-    src: https://github.com/qbox-project/qbx_streetraces
+    src: https://github.com/mri-Qbox-Brasil/qbx_streetraces
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_storerobbery
     ref: main
-    src: https://github.com/qbox-project/qbx_storerobbery
+    src: https://github.com/mri-Qbox-Brasil/qbx_storerobbery
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_spawn
     ref: main
-    src: https://github.com/qbox-project/qbx_spawn
+    src: https://github.com/mri-Qbox-Brasil/qbx_spawn
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_smallresources
     ref: main
-    src: https://github.com/qbox-project/qbx_smallresources
+    src: https://github.com/mri-Qbox-Brasil/qbx_smallresources
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_recyclejob
     ref: main
-    src: https://github.com/qbox-project/qbx_recyclejob
+    src: https://github.com/mri-Qbox-Brasil/qbx_recyclejob
 
   - action: download_file
     path: ./tmp/qbx_diving.zip
@@ -303,7 +303,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_cityhall
     ref: main
-    src: https://github.com/qbox-project/qbx_cityhall
+    src: https://github.com/mri-Qbox-Brasil/qbx_cityhall
 
   - action: download_file
     path: ./tmp/qbx_truckrobbery.zip
@@ -315,27 +315,27 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_pawnshop
     ref: main
-    src: https://github.com/qbox-project/qbx_pawnshop
+    src: https://github.com/mri-Qbox-Brasil/qbx_pawnshop
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_taxijob
     ref: main
-    src: https://github.com/qbox-project/qbx_taxijob
+    src: https://github.com/mri-Qbox-Brasil/qbx_taxijob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_busjob
     ref: main
-    src: https://github.com/qbox-project/qbx_busjob
+    src: https://github.com/mri-Qbox-Brasil/qbx_busjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_newsjob
     ref: main
-    src: https://github.com/qbox-project/qbx_newsjob
+    src: https://github.com/mri-Qbox-Brasil/qbx_newsjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_jewelery
     ref: main
-    src: https://github.com/qbox-project/qbx_jewelery
+    src: https://github.com/mri-Qbox-Brasil/qbx_jewelery
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -343,22 +343,22 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_bankrobbery
     ref: main
-    src: https://github.com/qbox-project/qbx_bankrobbery
+    src: https://github.com/mri-Qbox-Brasil/qbx_bankrobbery
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_truckerjob
     ref: main
-    src: https://github.com/qbox-project/qbx_truckerjob
+    src: https://github.com/mri-Qbox-Brasil/qbx_truckerjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_garbagejob
     ref: main
-    src: https://github.com/qbox-project/qbx_garbagejob
+    src: https://github.com/mri-Qbox-Brasil/qbx_garbagejob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_drugs
     ref: main
-    src: https://github.com/qbox-project/qbx_drugs
+    src: https://github.com/mri-Qbox-Brasil/qbx_drugs
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -366,22 +366,22 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_lockpick
     ref: main
-    src: https://github.com/qbox-project/qbx_lockpick
+    src: https://github.com/mri-Qbox-Brasil/qbx_lockpick
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_interior
     ref: main
-    src: https://github.com/qbox-project/qbx_interior
+    src: https://github.com/mri-Qbox-Brasil/qbx_interior
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_loading
     ref: main
-    src: https://github.com/qbox-project/qbx_loading
+    src: https://github.com/mri-Qbox-Brasil/qbx_loading
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_idcard
     ref: main
-    src: https://github.com/Qbox-project/qbx_idcard
+    src: https://github.com/mri-Qbox-Brasil/qbx_idcard
 
   - action: download_file
     path: ./tmp/qbx_binoculars.zip
@@ -393,22 +393,22 @@ tasks:
   - action: download_github
     dest: ./resources/[qbx]/qbx_carwash
     ref: main
-    src: https://github.com/Qbox-project/qbx_carwash
+    src: https://github.com/mri-Qbox-Brasil/qbx_carwash
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_fireworks
     ref: main
-    src: https://github.com/Qbox-project/qbx_fireworks
+    src: https://github.com/mri-Qbox-Brasil/qbx_fireworks
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehicles
     ref: main
-    src: https://github.com/Qbox-project/qbx_vehicles
+    src: https://github.com/mri-Qbox-Brasil/qbx_vehicles
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_density
     ref: main
-    src: https://github.com/Qbox-project/qbx_density
+    src: https://github.com/mri-Qbox-Brasil/qbx_density
 
   # OX
   - action: download_file
@@ -463,7 +463,7 @@ tasks:
   - action: download_github
     dest: ./resources/[npwd]/qbx_npwd
     ref: main
-    src: https://github.com/Qbox-project/qbx_npwd
+    src: https://github.com/mri-Qbox-Brasil/qbx_npwd
 
   - action: move_path
     src: ./resources/[npwd]/qbx_npwd/config.json
