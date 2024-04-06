@@ -134,9 +134,9 @@ tasks:
   #   src: ./tmp/qbx_core.zip
 
   - action: download_github
-  dest: ./resources/[qbx]/qbx_core
-  ref: main
-  src: https://github.com/mri-Qbox-Brasil/qbx_core
+    dest: ./resources/[qbx]/qbx_core
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_core
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_scoreboard
