@@ -88,7 +88,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/illenium-appearance.zip
-    url: https://github.com/iLLeniumStudios/illenium-appearance/releases/latest/download/illenium-appearance.zip
+    url: https://github.com/mri-Qbox-Brasil/illenium-appearance/releases/latest/download/illenium-appearance.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/illenium-appearance.zip
