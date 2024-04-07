@@ -492,7 +492,7 @@ tasks:
   # MRI
   - action: download_github
     dest: ./resources/[mri]/mri_Qadmin
-    ref: main
+    ref: master
     src: https://github.com/mur4i/mri_Qadmin
 
   # Clean up
