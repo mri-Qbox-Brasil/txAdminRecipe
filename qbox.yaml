@@ -143,10 +143,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_scoreboard
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_adminmenu
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_adminmenu
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_adminmenu
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_adminmenu
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -488,6 +488,12 @@ tasks:
   - action: unzip
     dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
+
+  # MRI
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qadmin
+    ref: main
+    src: https://github.com/mur4i/mri_Qadmin
 
   # Clean up
   - action: remove_path
