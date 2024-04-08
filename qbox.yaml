@@ -470,7 +470,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/ox_doorlock.zip
-    url: https://github.com/mur4i/ox_doorlock/releases/latest/download/ox_doorlock.zip
+    url: https://github.com/mri-Qbox-Brasil/ox_doorlock/releases/latest/download/ox_doorlock.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
