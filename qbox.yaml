@@ -79,6 +79,11 @@ tasks:
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
 
+  - action: download_github
+    dest: ./resources/[standalone]/interact-sound
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/interact-sound
+
   # - action: download_file
   #   path: ./tmp/Renewed-Banking.zip
   #   url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
@@ -113,6 +118,16 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
+
+  - action: download_github
+    dest: ./resources/[standalone]/cdn-fool
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cdn-fool
+
+  - action: download_github
+    dest: ./resources/[standalone]/cdn-fuel
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cdn-fuel
 
     # VOICE
   - action: download_github
@@ -459,10 +474,10 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
 
-  - action: download_github
-    dest: ./resources/[ox]/ox_fuel
-    ref: main
-    src: https://github.com/overextended/ox_fuel
+  # - action: download_github
+  #   dest: ./resources/[ox]/ox_fuel
+  #   ref: main
+  #   src: https://github.com/overextended/ox_fuel
 
     # NPWD
   - action: download_file
