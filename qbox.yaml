@@ -129,6 +129,9 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/cdn-fuel
 
+  - action: query_database
+    file: ./resources/[standalone]/cdn-fuel/assets/sql/cdn-fuel.sql
+    
     # VOICE
   - action: download_github
     dest: ./resources/[voice]/pma-voice
