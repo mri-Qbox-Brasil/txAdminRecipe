@@ -508,7 +508,7 @@ tasks:
     src: ./tmp/pefcl.zip
 
   - action: query_database
-    file: ./resources/[npwd]/npwd/import.sql
+    file: ./resources/[pefcl]/pefcl/import.sql
 
   - action: download_github
     dest: ./resources/[pefcl]/qbx_pefcl
