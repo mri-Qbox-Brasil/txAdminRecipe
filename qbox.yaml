@@ -89,7 +89,7 @@ tasks:
   #   url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
   # - action: unzip
   #   dest: ./resources/[standalone]
-  #   src: ./tmp/Renewed-Banking.zip
+  #   src: ./tmp/Renewed-Banking.zip 
 
   - action: download_file
     path: ./tmp/illenium-appearance.zip
