@@ -79,12 +79,12 @@ tasks:
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
 
-  - action: download_file
-    path: ./tmp/Renewed-Banking.zip
-    url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/Renewed-Banking.zip
+  # - action: download_file
+  #   path: ./tmp/Renewed-Banking.zip
+  #   url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
+  # - action: unzip
+  #   dest: ./resources/[standalone]
+  #   src: ./tmp/Renewed-Banking.zip
 
   - action: download_file
     path: ./tmp/illenium-appearance.zip
@@ -181,12 +181,17 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_seatbelt
 
-  - action: download_file
-    path: ./tmp/qbx_management.zip
-    url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_management.zip
+  # - action: download_file
+  #   path: ./tmp/qbx_management.zip
+  #   url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
+  # - action: unzip
+  #   dest: ./resources/[qbx]
+  #   src: ./tmp/qbx_management.zip
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_management
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_management
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_weed
@@ -310,12 +315,17 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_cityhall
 
-  - action: download_file
-    path: ./tmp/qbx_truckrobbery.zip
-    url: https://github.com/qbox-project/qbx_truckrobbery/releases/latest/download/qbx_truckrobbery.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_truckrobbery.zip
+  # - action: download_file
+  #   path: ./tmp/qbx_truckrobbery.zip
+  #   url: https://github.com/qbox-project/qbx_truckrobbery/releases/latest/download/qbx_truckrobbery.zip
+  # - action: unzip
+  #   dest: ./resources/[qbx]
+  #   src: ./tmp/qbx_truckrobbery.zip
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_truckrobbery
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_truckrobbery
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_pawnshop
@@ -496,6 +506,9 @@ tasks:
   - action: unzip
     dest: ./resources/[pefcl]
     src: ./tmp/pefcl.zip
+
+  - action: query_database
+    file: ./resources/[npwd]/npwd/import.sql
 
   - action: download_github
     dest: ./resources/[pefcl]/qbx_pefcl
