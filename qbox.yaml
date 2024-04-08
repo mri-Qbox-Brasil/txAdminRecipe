@@ -475,6 +475,7 @@ tasks:
     dest: ./resources/[npwd]/npwd/config.json
     overwrite: true
 
+  # PROJECT ERROR
   - action: download_file
     path: ./tmp/npwd_qbx_garages.zip
     url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
@@ -489,12 +490,6 @@ tasks:
     dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
 
-  # MRI
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qadmin
-    ref: master
-    src: https://github.com/mur4i/mri_Qadmin
-
   - action: download_file
     path: ./tmp/pefcl.zip
     url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
@@ -504,8 +499,14 @@ tasks:
 
   - action: download_github
     dest: ./resources/[pefcl]/qbx_pefcl
-    ref: master
+    ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
+
+  # MRI
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qadmin
+    ref: master
+    src: https://github.com/mur4i/mri_Qadmin
 
   # Clean up
   - action: remove_path
