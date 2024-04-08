@@ -81,7 +81,7 @@ tasks:
 
   - action: download_github
     dest: ./resources/[standalone]/interact-sound
-    ref: main
+    ref: master
     src: https://github.com/mri-Qbox-Brasil/interact-sound
 
   # - action: download_file
