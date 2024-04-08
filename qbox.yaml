@@ -131,6 +131,11 @@ tasks:
 
   - action: query_database
     file: ./resources/[standalone]/cdn-fuel/assets/sql/cdn-fuel.sql
+
+  - action: download_github
+    dest: ./resources/[standalone]/Ricky-VinewoodSign
+    ref: master
+    src: https://github.com/mri-Qbox-Brasil/Ricky-VinewoodSign
     
     # VOICE
   - action: download_github
