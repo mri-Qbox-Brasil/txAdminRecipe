@@ -134,7 +134,7 @@ tasks:
 
   - action: download_github
     dest: ./resources/[standalone]/Ricky-VinewoodSign
-    ref: master
+    ref: main
     src: https://github.com/mri-Qbox-Brasil/Ricky-VinewoodSign
     
     # VOICE
@@ -470,7 +470,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/ox_doorlock.zip
-    url: https://github.com/overextended/ox_doorlock/releases/latest/download/ox_doorlock.zip
+    url: https://github.com/mur4i/ox_doorlock/releases/latest/download/ox_doorlock.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
