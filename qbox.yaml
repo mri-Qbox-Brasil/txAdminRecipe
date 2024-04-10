@@ -118,24 +118,6 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
-
-  - action: download_github
-    dest: ./resources/[standalone]/cdn-fool
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/cdn-fool
-
-  - action: download_github
-    dest: ./resources/[standalone]/cdn-fuel
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/cdn-fuel
-
-  - action: query_database
-    file: ./resources/[standalone]/cdn-fuel/assets/sql/cdn-fuel.sql
-
-  - action: download_github
-    dest: ./resources/[standalone]/Ricky-VinewoodSign
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/Ricky-VinewoodSign
     
     # VOICE
   - action: download_github
@@ -523,26 +505,48 @@ tasks:
     dest: ./resources/[npwd-apps]
     src: ./tmp/npwd_qbx_mail.zip
 
-  - action: download_file
-    path: ./tmp/pefcl.zip
-    url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
-  - action: unzip
-    dest: ./resources/[pefcl]
-    src: ./tmp/pefcl.zip
-
-  - action: query_database
-    file: ./resources/[pefcl]/pefcl/import.sql
-
-  - action: download_github
-    dest: ./resources/[pefcl]/qbx_pefcl
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
-
   # MRI
   - action: download_github
     dest: ./resources/[mri]/mri_Qadmin
     ref: master
     src: https://github.com/mur4i/mri_Qadmin
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qvinewood
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qvinewood
+
+
+  ## MRI / PEFCL
+  - action: download_file
+    path: ./tmp/pefcl.zip
+    url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
+  - action: unzip
+    dest: ./resources/[mri]/[pefcl]
+    src: ./tmp/pefcl.zip
+
+  - action: query_database
+    file: ./resources/[mri]/[pefcl]/pefcl/import.sql
+
+  - action: download_github
+    dest: ./resources/[mri]/[pefcl]/qbx_pefcl
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
+
+
+  ## MRI / CDN
+  - action: download_github
+    dest: ./resources/[mri]/[cdn]/cdn-fool
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cdn-fool
+
+  - action: download_github
+    dest: ./resources/[mri]/[cdn]/cdn-fuel
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cdn-fuel
+
+  - action: query_database
+    file: ./resources/[mri]/[cdn]/cdn-fuel/assets/sql/cdn-fuel.sql
 
   # Clean up
   - action: remove_path
