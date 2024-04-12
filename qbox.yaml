@@ -33,12 +33,16 @@ tasks:
   - action: query_database
     file: ./tmp/qbox/qbox.sql
 
-  # STANDALONE
+  # CFX-DEFAULT
   - action: download_github
     src: https://github.com/citizenfx/cfx-server-data
     subpath: resources
     dest: ./resources/[cfx-default]
 
+  - action: remove_path
+    path: ./resources/[cfx-default]/gameplay/chat
+
+  # STANDALONE
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
