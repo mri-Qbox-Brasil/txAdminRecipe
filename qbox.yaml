@@ -520,6 +520,100 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qvinewood
 
+  - action: download_github
+    dest: ./resources/[mri]/crouch_crawl
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/crouch_crawl
+
+  - action: download_github
+    dest: ./resources/[mri]/hookers
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/hookers
+
+  - action: download_github
+    dest: ./resources/[mri]/idle
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/idle
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qairbags
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qairbags
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qblips
+    ref: master
+    src: https://github.com/mur4i/mri_Qblips
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qbox
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qbox
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qchat
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qchat
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qdraw
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qdraw
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qelevators
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qelevators
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qfleecaheist
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qfleecaheist
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qnpc
+    ref: main
+    src: https://github.com/mur4i/mri_Qnpc
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qobjects
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qobjects
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qstashes
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qstashes
+
+  - action: download_github
+    dest: ./resources/[mri]/object_gizmo
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/object_gizmo
+
+  - action: download_github
+    dest: ./resources/[mri]/ox_compat
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ox_compat
+
+  ## MRI / CDN
+  - action: download_github
+    dest: ./resources/[mri]/[cdn]/cdn-fool
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cdn-fool
+
+  - action: download_github
+    dest: ./resources/[mri]/[cdn]/cdn-fuel
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cdn-fuel
+
+  - action: query_database
+    file: ./resources/[mri]/[cdn]/cdn-fuel/assets/sql/cdn-fuel.sql
+
+  ## MRI / ND
+  - action: download_github
+    dest: ./resources/[mri]/[ND]/ND_Police
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ND_Police
 
   ## MRI / PEFCL
   - action: download_file
@@ -537,20 +631,38 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
 
-
-  ## MRI / CDN
+  ## MRI / PICKLE
   - action: download_github
-    dest: ./resources/[mri]/[cdn]/cdn-fool
+    dest: ./resources/[mri]/[pickle]/pickle_prisons
     ref: main
-    src: https://github.com/mri-Qbox-Brasil/cdn-fool
+    src: https://github.com/mri-Qbox-Brasil/pickle_prisons
+    
+  - action: download_github
+    dest: ./resources/[mri]/[pickle]/pickle_weaponthrowing
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/pickle_weaponthrowing
+
+  ## MRI / PS
+  - action: download_github
+    dest: ./resources/[mri]/[ps]/ps-camera
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ps-camera
 
   - action: download_github
-    dest: ./resources/[mri]/[cdn]/cdn-fuel
+    dest: ./resources/[mri]/[ps]/ps-dispatch
     ref: main
-    src: https://github.com/mri-Qbox-Brasil/cdn-fuel
+    src: https://github.com/mri-Qbox-Brasil/ps-dispatch
 
-  - action: query_database
-    file: ./resources/[mri]/[cdn]/cdn-fuel/assets/sql/cdn-fuel.sql
+  - action: download_github
+    dest: ./resources/[mri]/[ps]/ps-mdt
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ps-mdt
+
+  ## MRI / RANDOL
+  - action: download_github
+    dest: ./resources/[mri]/[randol]/randol_notes
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/randol_notes
 
   # Clean up
   - action: remove_path
