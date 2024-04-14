@@ -493,6 +493,9 @@ tasks:
     src: ./resources/[npwd]/qbx_npwd/config.json
     dest: ./resources/[npwd]/npwd/config.json
     overwrite: true
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   # PROJECT ERROR
   - action: download_file
