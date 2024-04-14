@@ -659,7 +659,7 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/ps-mdt
 
   - action: query_database
-    file: ./resources/[mri]/[pefcl]/pefcl/import.sql
+    file: ./resources/[mri]/[ps]/ps-mdt/import.sql
 
   ## MRI / RANDOL
   - action: download_github
