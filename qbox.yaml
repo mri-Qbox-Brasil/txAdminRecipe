@@ -438,8 +438,9 @@ tasks:
   # - action: unzip
   #   dest: ./resources/[ox]
   #   src: ./tmp/ox_lib.zip
+
   - action: download_github
-    dest: ./resources/[ox]
+    dest: ./resources/[ox]/ox_lib
     ref: main
     src: https://github.com/mri-Qbox-Brasil/ox_lib
 
