@@ -175,10 +175,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_houserobbery
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_prison
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_prison
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_prison
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_prison
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_hud
@@ -305,19 +305,19 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_recyclejob
 
-  - action: download_file
-    path: ./tmp/qbx_diving.zip
-    url: https://github.com/qbox-project/qbx_diving/releases/latest/download/qbx_diving.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_diving.zip
+  # - action: download_file
+  #   path: ./tmp/qbx_diving.zip
+  #   url: https://github.com/qbox-project/qbx_diving/releases/latest/download/qbx_diving.zip
+  # - action: unzip
+  #   dest: ./resources/[qbx]
+  #   src: ./tmp/qbx_diving.zip
 
-  - action: download_file
-    path: ./tmp/qbx_divegear.zip
-    url: https://github.com/qbox-project/qbx_divegear/releases/latest/download/qbx_divegear.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_divegear.zip
+  # - action: download_file
+  #   path: ./tmp/qbx_divegear.zip
+  #   url: https://github.com/qbox-project/qbx_divegear/releases/latest/download/qbx_divegear.zip
+  # - action: unzip
+  #   dest: ./resources/[qbx]
+  #   src: ./tmp/qbx_divegear.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_cityhall
