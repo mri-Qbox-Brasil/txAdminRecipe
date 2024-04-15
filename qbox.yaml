@@ -33,7 +33,7 @@ tasks:
   - action: query_database
     file: ./tmp/qbox/qbox.sql
 
-  # CFX-DEFAULT
+  # CFX-DEFAULT fork
   - action: download_github
     src: https://github.com/mri-Qbox-Brasil/cfx-server-data
     subpath: resources
