@@ -35,7 +35,7 @@ tasks:
 
   # CFX-DEFAULT
   - action: download_github
-    src: https://github.com/citizenfx/cfx-server-data
+    src: https://github.com/mri-Qbox-Brasil/cfx-server-data
     subpath: resources
     dest: ./resources/[cfx-default]
 
