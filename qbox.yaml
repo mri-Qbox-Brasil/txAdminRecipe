@@ -39,9 +39,6 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx-default]
 
-  - action: remove_path
-    path: ./resources/[cfx-default]/gameplay/chat
-
   # STANDALONE
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
