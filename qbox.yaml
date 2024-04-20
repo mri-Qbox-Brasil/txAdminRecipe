@@ -650,10 +650,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/pickle_prisons
     
-  - action: download_github
-    dest: ./resources/[mri]/[pickle]/pickle_weaponthrowing
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/pickle_weaponthrowing
+  # - action: download_github
+  #   dest: ./resources/[mri]/[pickle]/pickle_weaponthrowing
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/pickle_weaponthrowing
 
   ## MRI / PS
   - action: download_github
