@@ -530,7 +530,7 @@ tasks:
   # MRI
   - action: download_github
     dest: ./resources/[mri]/mbt_malisling
-    ref: master
+    ref: main
     src: https://github.com/mri-Qbox-Brasil/mbt_malisling
 
   - action: download_github
