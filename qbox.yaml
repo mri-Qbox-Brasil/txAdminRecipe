@@ -126,10 +126,15 @@ tasks:
     ref: main
     src: https://github.com/AvarianKnight/pma-voice
 
+  # - action: download_github
+  #   dest: ./resources/[voice]/qbx_radio
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_radio
+
   - action: download_github
-    dest: ./resources/[voice]/qbx_radio
+    dest: ./resources/[voice]/mm_radio
     ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_radio
+    src: https://github.com/mri-Qbox-Brasil/mm_radio
 
   # Downloading Qbox resources
   # - action: download_file
@@ -177,10 +182,10 @@ tasks:
   #   ref: main
   #   src: https://github.com/mri-Qbox-Brasil/qbx_prison
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_hud
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_hud
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_hud
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_hud
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_seatbelt
@@ -411,10 +416,10 @@ tasks:
     dest: ./resources/[qbx]
     src: ./tmp/qbx_binoculars.zip
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_carwash
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_carwash
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_carwash
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_carwash
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_fireworks
@@ -524,6 +529,11 @@ tasks:
 
   # MRI
   - action: download_github
+    dest: ./resources/[mri]/mbt_malisling
+    ref: master
+    src: https://github.com/mri-Qbox-Brasil/mbt_malisling
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qadmin
     ref: master
     src: https://github.com/mur4i/mri_Qadmin
@@ -564,6 +574,11 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/mri_Qbox
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qcarwash
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qcarwash
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qchat
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qchat
@@ -597,6 +612,16 @@ tasks:
     dest: ./resources/[mri]/mri_Qobjects
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qobjects
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qrobnpcs
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qrobnpcs
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qspotlights
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qspotlights
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qstashes
@@ -684,6 +709,11 @@ tasks:
     dest: ./resources/[mri]/[randol]/randol_notes
     ref: main
     src: https://github.com/mri-Qbox-Brasil/randol_notes
+
+  - action: download_github
+    dest: ./resources/[mri]/[randol]/randol_gscache
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/randol_gscache
 
   # Clean up
   - action: remove_path
