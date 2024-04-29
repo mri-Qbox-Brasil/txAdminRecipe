@@ -119,6 +119,11 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Weathersync.zip
+
+  - action: download_github
+    dest: ./resources/[standalone]/bl_bridge
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/bl_bridge
     
     # VOICE
   - action: download_github
