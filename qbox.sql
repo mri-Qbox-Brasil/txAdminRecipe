@@ -211,6 +211,17 @@ CREATE TABLE IF NOT EXISTS `player_vehicles` (
   KEY `license` (`license`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1;
 
+-- Lunar garages
+ALTER TABLE `player_vehicles`
+ADD COLUMN `job` VARCHAR(20) NULL DEFAULT NULL;
+
+ALTER TABLE `player_vehicles`
+ADD COLUMN `type` VARCHAR(20) NOT NULL DEFAULT 'car';
+
+ALTER TABLE `player_vehicles`
+ADD COLUMN `stored` TINYINT(1) NOT NULL DEFAULT '0';
+----------------
+
 CREATE TABLE IF NOT EXISTS `player_warns` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `senderIdentifier` varchar(50) DEFAULT NULL,
