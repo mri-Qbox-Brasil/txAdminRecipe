@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: mri-Qbox Brasil Project
-version: 1.0.0
+version: 1.0.2
 author: The Community
 description: Um projeto brasileiro baseado na framework Qbox.
 
@@ -772,6 +772,7 @@ tasks:
   - action: download_file
     path: ./tmp/pefcl.zip
     url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
+
   - action: unzip
     dest: ./resources/[mri]/[pefcl]
     src: ./tmp/pefcl.zip
