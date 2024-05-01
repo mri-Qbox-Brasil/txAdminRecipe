@@ -166,7 +166,7 @@ tasks:
     ref: mri_Qbox
     src: https://github.com/mri-Qbox-Brasil/qbx_core
 
-    - action: download_github
+  - action: download_github
     dest: ./resources/[qbx]/qbx_customs
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_customs
@@ -417,9 +417,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_drugs
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_drugs
-
-    - action: waste_time # prevent github throttling
-    seconds: 10
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_lockpick
