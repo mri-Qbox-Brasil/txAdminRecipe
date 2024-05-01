@@ -163,7 +163,7 @@ tasks:
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_core
-    ref: main
+    ref: mri_Qbox
     src: https://github.com/mri-Qbox-Brasil/qbx_core
 
     - action: download_github
