@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: mri-Qbox Brasil Project
-version: 1.0.2
+version: 1.0.3
 author: The Community
 description: Um projeto brasileiro baseado na framework Qbox.
 
@@ -673,7 +673,7 @@ tasks:
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qshootmodes
-    ref: main
+    ref: master
     src: https://github.com/mri-Qbox-Brasil/mri_Qshootmodes
 
   - action: download_github
