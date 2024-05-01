@@ -3,7 +3,7 @@ $onesync: on
 name: mri-Qbox Brasil Project
 version: 1.0.0
 author: The Community
-description: A FiveM core with a load of bloat.
+description: Um projeto brasileiro baseado na framework Qbox.
 
 tasks:
   #  Download Base Files
