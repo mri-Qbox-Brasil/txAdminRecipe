@@ -1,9 +1,9 @@
 $engine: 3
 $onesync: on
 name: mri-Qbox Brasil Project
-version: 1.0.0
+version: 1.0.3
 author: The Community
-description: A FiveM core with a load of bloat.
+description: Um projeto brasileiro baseado na framework Qbox.
 
 tasks:
   #  Download Base Files
@@ -46,9 +46,21 @@ tasks:
     src: https://github.com/Bob74/bob74_ipl
 
   - action: download_github
+    dest: ./resources/[standalone]/cfx-anes-gates
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cfx-anes-gates
+
+  - action: download_github
     dest: ./resources/[standalone]/safecracker
     ref: main
     src: https://github.com/mri-Qbox-Brasil/safecracker
+
+  # - action: download_file
+  #   path: ./tmp/fmsdk.zip
+  #   url: https://github.com/fivemanage/sdk/releases/download/v2.1.1/fmsdk.zip
+  # - action: unzip
+  #   dest: ./resources/[standalone]/fmsdk
+  #   src: ./tmp/fmsdk.zip
 
   - action: download_file
     path: ./tmp/screenshot-basic.zip
@@ -151,13 +163,18 @@ tasks:
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_core
-    ref: main
+    ref: mri_Qbox
     src: https://github.com/mri-Qbox-Brasil/qbx_core
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_scoreboard
+    dest: ./resources/[qbx]/qbx_customs
     ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_scoreboard
+    src: https://github.com/mri-Qbox-Brasil/qbx_customs
+
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_scoreboard
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_scoreboard
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_adminmenu
@@ -252,30 +269,30 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_radialmenu
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_policejob
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_policejob
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_policejob
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_policejob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_apartments
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_apartments
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_vehiclekeys
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_vehiclekeys
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_vehiclekeys
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_vehiclekeys
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_mechanicjob
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_mechanicjob
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_vineyard
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_vineyard
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_vineyard
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_vineyard
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_scrapyard
@@ -349,6 +366,11 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/qbx_pawnshop
 
   - action: download_github
+    dest: ./resources/[qbx]/qbx_photomode
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_photomode
+
+  - action: download_github
     dest: ./resources/[qbx]/qbx_taxijob
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_taxijob
@@ -357,6 +379,11 @@ tasks:
     dest: ./resources/[qbx]/qbx_busjob
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_busjob
+
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_camera
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_camera
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_newsjob
@@ -390,9 +417,6 @@ tasks:
     dest: ./resources/[qbx]/qbx_drugs
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_drugs
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_lockpick
@@ -473,12 +497,16 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
 
-  - action: download_file
-    path: ./tmp/ox_inventory.zip
-    url: https://github.com/mri-Qbox-Brasil/ox_inventory/releases/latest/download/ox_inventory.zip
-  - action: unzip
-    dest: ./resources/[ox]
-    src: ./tmp/ox_inventory.zip
+  # - action: download_file
+  #   path: ./tmp/ox_inventory.zip
+  #   url: https://github.com/mri-Qbox-Brasil/ox_inventory/releases/latest/download/ox_inventory.zip
+  # - action: unzip
+  #   dest: ./resources/[ox]
+  #   src: ./tmp/ox_inventory.zip
+  - action: download_github
+    dest: ./resources/[ox]/ox_inventory
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ox_inventory
 
   # - action: download_github
   #   dest: ./resources/[ox]/ox_fuel
@@ -533,20 +561,10 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/npwd_qbx_mail
 
   # MRI
-  - action: download_github
-    dest: ./resources/[mri]/mbt_malisling
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/mbt_malisling
-
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qadmin
-    ref: master
-    src: https://github.com/mur4i/mri_Qadmin
-
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qvinewood
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/mri_Qvinewood
+  # - action: download_github
+  #   dest: ./resources/[mri]/mbt_malisling
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/mbt_malisling
 
   - action: download_github
     dest: ./resources/[mri]/crouch_crawl
@@ -563,10 +581,15 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/idle
 
+  # - action: download_github
+  #   dest: ./resources/[mri]/mri_Qairbags
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/mri_Qairbags
+
   - action: download_github
-    dest: ./resources/[mri]/mri_Qairbags
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/mri_Qairbags
+    dest: ./resources/[mri]/mri_Qadmin
+    ref: master
+    src: https://github.com/mur4i/mri_Qadmin
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qblips
@@ -579,6 +602,11 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/mri_Qbox
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qcarkeys
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qcarkeys
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qcarwash
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qcarwash
@@ -587,6 +615,11 @@ tasks:
     dest: ./resources/[mri]/mri_Qchat
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qchat
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qcrafting
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qcrafting
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qdraw
@@ -609,6 +642,16 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/mri_Qhud
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qjobsystem
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qjobsystem
+    
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qnitro
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qnitro
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qnpc
     ref: main
     src: https://github.com/mur4i/mri_Qnpc
@@ -619,9 +662,19 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/mri_Qobjects
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qpaintjob
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qpaintjob
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qrobnpcs
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qrobnpcs
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qshootmodes
+    ref: master
+    src: https://github.com/mri-Qbox-Brasil/mri_Qshootmodes
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qspotlights
@@ -632,6 +685,14 @@ tasks:
     dest: ./resources/[mri]/mri_Qstashes
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qstashes
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qvinewood
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qvinewood
 
   - action: download_github
     dest: ./resources/[mri]/object_gizmo
@@ -657,6 +718,50 @@ tasks:
   - action: query_database
     file: ./resources/[mri]/[cdn]/cdn-fuel/assets/sql/cdn-fuel.sql
 
+  ## MRI / CW
+  - action: download_github
+    dest: ./resources/[mri]/[cw]/cw-performance
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cw-performance
+
+  - action: download_github
+    dest: ./resources/[mri]/[cw]/cw-racingapp
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cw-racingapp
+  - action: query_database
+    file: ./resources/[mri]/[cw]/cw-racingapp/cw-racingapp.sql
+  - action: query_database
+    file: ./resources/[mri]/[cw]/cw-racingapp/cw-racingcrews.sql
+
+  - action: download_github
+    dest: ./resources/[mri]/[cw]/cw-rep
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/cw-rep
+  - action: query_database
+    file: ./resources/[mri]/[cw]/cw-rep/skills.sql
+
+  ## MRI / LUNAR
+  - action: download_github
+    dest: ./resources/[mri]/[lunar]/lunar_fishing
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/lunar_fishing
+
+  - action: download_github
+    dest: ./resources/[mri]/[lunar]/lunar_garage
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/lunar_garage
+
+  ## MRI / LUXART
+  - action: download_github
+    dest: ./resources/[mri]/[luxart]/lvc
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/lvc
+
+  - action: download_github
+    dest: ./resources/[mri]/[luxart]/RageUI
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/RageUI
+
   ## MRI / ND
   - action: download_github
     dest: ./resources/[mri]/[ND]/ND_Police
@@ -667,6 +772,7 @@ tasks:
   - action: download_file
     path: ./tmp/pefcl.zip
     url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
+
   - action: unzip
     dest: ./resources/[mri]/[pefcl]
     src: ./tmp/pefcl.zip
@@ -684,6 +790,11 @@ tasks:
     dest: ./resources/[mri]/[pickle]/pickle_prisons
     ref: main
     src: https://github.com/mri-Qbox-Brasil/pickle_prisons
+
+  - action: download_github
+    dest: ./resources/[mri]/[pickle]/pickle_waypoints
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/pickle_waypoints
     
   # - action: download_github
   #   dest: ./resources/[mri]/[pickle]/pickle_weaponthrowing
@@ -691,10 +802,10 @@ tasks:
   #   src: https://github.com/mri-Qbox-Brasil/pickle_weaponthrowing
 
   ## MRI / PS
-  - action: download_github
-    dest: ./resources/[mri]/[ps]/ps-camera
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/ps-camera
+  # - action: download_github
+  #   dest: ./resources/[mri]/[ps]/ps-camera
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/ps-camera
 
   - action: download_github
     dest: ./resources/[mri]/[ps]/ps-dispatch
@@ -709,16 +820,16 @@ tasks:
   - action: query_database
     file: ./resources/[mri]/[ps]/ps-mdt/mdt.sql
 
-  ## MRI / RANDOL
-  - action: download_github
-    dest: ./resources/[mri]/[randol]/randol_notes
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/randol_notes
-
+  ## MRI / RANDOLIO
   - action: download_github
     dest: ./resources/[mri]/[randol]/randol_gscache
     ref: main
     src: https://github.com/mri-Qbox-Brasil/randol_gscache
+
+  - action: download_github
+    dest: ./resources/[mri]/[randol]/randol_notes
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/randol_notes
 
   # Clean up
   - action: remove_path
