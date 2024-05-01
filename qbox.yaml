@@ -751,6 +751,17 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/lunar_garage
 
+  ## MRI / LUXART
+  - action: download_github
+    dest: ./resources/[mri]/[luxart]/lvc
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/lvc
+
+  - action: download_github
+    dest: ./resources/[mri]/[luxart]/RageUI
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/RageUI
+
   ## MRI / ND
   - action: download_github
     dest: ./resources/[mri]/[ND]/ND_Police
@@ -808,7 +819,7 @@ tasks:
   - action: query_database
     file: ./resources/[mri]/[ps]/ps-mdt/mdt.sql
 
-  ## MRI / RANDOL
+  ## MRI / RANDOLIO
   - action: download_github
     dest: ./resources/[mri]/[randol]/randol_gscache
     ref: main
