@@ -1,8 +1,8 @@
 $engine: 3
 $onesync: on
-name: mri-Qbox Brasil Project
+name: mri_Qbox
 version: 1.0.3
-author: The Community
+author: QBCore Brasil
 description: Um projeto brasileiro baseado na framework Qbox.
 
 tasks:
@@ -785,11 +785,14 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
 
-  ## MRI / PICKLE
+  ## MRI / PICKLE 
   - action: download_github
     dest: ./resources/[mri]/[pickle]/pickle_prisons
     ref: main
     src: https://github.com/mri-Qbox-Brasil/pickle_prisons
+
+  - action: query_database
+    file: ./resources/[mri]/[pickle]/pickle_prisons/_INSTALL/SQL/install.sql
 
   - action: download_github
     dest: ./resources/[mri]/[pickle]/pickle_waypoints
