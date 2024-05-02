@@ -241,10 +241,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_houses
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_garages
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_garages
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_garages
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_garages
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_ambulancejob
