@@ -130,15 +130,12 @@ CREATE TABLE IF NOT EXISTS `players` (
   `inventory` longtext DEFAULT NULL,
   `phone_number` VARCHAR(20) DEFAULT NULL,
   `last_updated` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `last_logged_out` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`citizenid`),
   KEY `id` (`id`),
   KEY `last_updated` (`last_updated`),
   KEY `license` (`license`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-ALTER TABLE `players` 
-ADD IF NOT EXISTS `last_logged_out` timestamp NULL DEFAULT NULL AFTER `last_updated`,
-MODIFY COLUMN `citizenid` varchar(50) NOT NULL COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `playerskins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
