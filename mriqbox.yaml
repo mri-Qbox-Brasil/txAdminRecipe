@@ -750,6 +750,9 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/rhd_garage
 
   - action: query_database
+    file: ./resources/[mri]/rhd_garage/sql/qb.sql
+
+  - action: query_database
     file: ./resources/[mri]/rhd_garage/sql/rhd_garage.policeimpound.sql
 
   ## MRI / ARS
