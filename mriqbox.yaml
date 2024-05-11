@@ -598,7 +598,7 @@ tasks:
     
   - action: download_github
     dest: ./resources/[mri]/mri_Qbackpack
-    ref: master
+    ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qbackpack
 
   - action: download_github
