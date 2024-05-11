@@ -31,7 +31,7 @@ tasks:
   # Prepare Database
   - action: connect_database
   - action: query_database
-    file: ./tmp/qbox/qbox.sql
+    file: ./tmp/qbox/mriqbox.sql
 
   # CFX-DEFAULT fork
   - action: download_github
@@ -748,6 +748,9 @@ tasks:
     dest: ./resources/[mri]/rhd_garage
     ref: main
     src: https://github.com/mri-Qbox-Brasil/rhd_garage
+
+  - action: query_database
+    file: ./resources/[mri]/rhd_garage/sql/rhd_garage.policeimpound.sql
 
   ## MRI / ARS
   - action: download_github
