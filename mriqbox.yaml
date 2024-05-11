@@ -109,12 +109,10 @@ tasks:
   #   dest: ./resources/[standalone]
   #   src: ./tmp/Renewed-Banking.zip 
 
-  - action: download_file
-    path: ./tmp/illenium-appearance.zip
-    url: https://github.com/mri-Qbox-Brasil/illenium-appearance/releases/latest/download/illenium-appearance.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/illenium-appearance.zip
+  - action: download_github
+    dest: ./resources/[standalone]/illenium-appearance
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/illenium-appearance
 
   - action: download_github
     dest: ./resources/[standalone]/MugShotBase64
