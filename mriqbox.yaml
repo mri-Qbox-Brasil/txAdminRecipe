@@ -606,6 +606,9 @@ tasks:
     ref: master
     src: https://github.com/mur4i/mri_Qblips
 
+  - action: query_database
+    file: ./resources/[mri]/mri_Qblips/db/blips.sql
+
   - action: download_github
     dest: ./resources/[mri]/mri_Qbox
     ref: main
