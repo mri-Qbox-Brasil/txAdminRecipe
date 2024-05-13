@@ -39,6 +39,9 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx-default]
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   # STANDALONE
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
