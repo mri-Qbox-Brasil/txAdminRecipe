@@ -33,7 +33,7 @@ tasks:
   - action: query_database
     file: ./tmp/qbox/mriqbox.sql
 
-  - action: waste_time # prevent github throttling
+  - action: waste_time # prevent github throttling teste
     seconds: 10
 
   # CFX-DEFAULT fork
