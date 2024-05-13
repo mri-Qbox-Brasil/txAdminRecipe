@@ -181,14 +181,13 @@ tasks:
   #   dest: ./resources/[qbx]/qbx_scoreboard
   #   ref: main
   #   src: https://github.com/mri-Qbox-Brasil/qbx_scoreboard
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_adminmenu
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_adminmenu
-
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_vehiclesales
