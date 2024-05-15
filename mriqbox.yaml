@@ -377,25 +377,25 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_photomode
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_taxijob
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_taxijob
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_taxijob
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_taxijob
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_busjob
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_busjob
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_busjob
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_busjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_camera
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_camera
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_newsjob
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_newsjob
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_newsjob
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_newsjob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_jewelery
@@ -410,15 +410,15 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_bankrobbery
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_truckerjob
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_truckerjob
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_truckerjob
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_truckerjob
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_garbagejob
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_garbagejob
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_garbagejob
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_garbagejob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_drugs
@@ -931,6 +931,11 @@ tasks:
   #   dest: ./resources/[mri]/[ps]/ps-camera
   #   ref: main
   #   src: https://github.com/mri-Qbox-Brasil/ps-camera
+
+  - action: download_github
+    dest: ./resources/[mri]/[ps]/ps-buffs
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ps-buffs
 
   - action: download_github
     dest: ./resources/[mri]/[ps]/ps-dispatch
