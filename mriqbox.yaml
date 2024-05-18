@@ -50,11 +50,6 @@ tasks:
     src: https://github.com/Bob74/bob74_ipl
 
   - action: download_github
-    dest: ./resources/[standalone]/cfx-anes-gates
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/cfx-anes-gates
-
-  - action: download_github
     dest: ./resources/[standalone]/fivem-freecam
     ref: master
     src: https://github.com/mri-Qbox-Brasil/fivem-freecam
@@ -132,12 +127,16 @@ tasks:
     url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/LICENSE.md
     path: ./resources/[standalone]/MugShotBase64/LICENSE.md
 
-  - action: download_file
-    path: ./tmp/Renewed-Weathersync.zip
-    url: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/Renewed-Weathersync.zip
+  # - action: download_file
+  #   path: ./tmp/Renewed-Weathersync.zip
+  #   url: https://github.com/Renewed-Scripts/Renewed-Weathersync/releases/latest/download/Renewed-Weathersync.zip
+  # - action: unzip
+  #   dest: ./resources/[standalone]
+  #   src: ./tmp/Renewed-Weathersync.zip
+  - action: download_github
+    dest: ./resources/[standalone]/Renewed-Weathersync
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/Renewed-Weathersync
 
   - action: download_github
     dest: ./resources/[standalone]/bl_bridge
