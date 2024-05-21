@@ -879,10 +879,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/kloud-farmjob
 
-  - action: download_github
-    dest: ./resources/[mri]/[outros]/kto_guidebook
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/kto_guidebook
+  # - action: download_github
+  #   dest: ./resources/[mri]/[outros]/kto_guidebook
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/kto_guidebook
 
   - action: download_github
     dest: ./resources/[mri]/[outros]/maji-gasdelivery
