@@ -65,13 +65,20 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/fmsdk.zip
-
+    
   - action: download_file
-    path: ./tmp/screenshot-basic.zip
-    url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+    path: ./tmp/discord-screenshot-1.3.7.zip
+    url: https://github.com/jaimeadf/discord-screenshot/releases/download/1.3.7/discord-screenshot-1.3.7.zip
   - action: unzip
-    dest: ./resources/[standalone]/screenshot-basic
-    src: ./tmp/screenshot-basic.zip
+    dest: ./resources/[standalone]
+    src: ./tmp/discord-screenshot-1.3.7.zip
+
+  # - action: download_file # no de cima já tem esse aqui
+  #   path: ./tmp/screenshot-basic.zip
+  #   url: https://github.com/project-error/screenshot-basic/releases/latest/download/screenshot-basic.zip
+  # - action: unzip
+  #   dest: ./resources/[standalone]/screenshot-basic
+  #   src: ./tmp/screenshot-basic.zip
 
   - action: download_github
     dest: ./resources/[standalone]/mhacking
