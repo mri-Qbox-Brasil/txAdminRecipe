@@ -421,10 +421,10 @@ tasks:
   #   ref: main
   #   src: https://github.com/mri-Qbox-Brasil/qbx_truckerjob
 
-  # - action: download_github
-  #   dest: ./resources/[qbx]/qbx_garbagejob
-  #   ref: main
-  #   src: https://github.com/mri-Qbox-Brasil/qbx_garbagejob
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_garbagejob
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_garbagejob
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_drugs
