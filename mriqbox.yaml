@@ -719,7 +719,7 @@ tasks:
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qspawn
-    ref: master
+    ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qspawn
 
   - action: download_github
