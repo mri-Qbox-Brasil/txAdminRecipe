@@ -91,7 +91,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/scully_emotemenu
     ref: main
-    src: https://github.com/Scullyy/scully_emotemenu
+    src: https://github.com/mri-Qbox-Brasil/scully_emotemenu
 
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
@@ -327,10 +327,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_storerobbery
 
-  # - action: download_github
-  #   dest: ./resources/[qbx]/qbx_spawn
-  #   ref: main
-  #   src: https://github.com/mri-Qbox-Brasil/qbx_spawn
+  - action: download_github
+    dest: ./resources/[qbx]/qbx_spawn
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/qbx_spawn
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_smallresources
@@ -717,10 +717,10 @@ tasks:
     ref: master
     src: https://github.com/mri-Qbox-Brasil/mri_Qshootmodes
 
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qspawn
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/mri_Qspawn
+  # - action: download_github
+  #   dest: ./resources/[mri]/mri_Qspawn
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/mri_Qspawn
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qspotlights
