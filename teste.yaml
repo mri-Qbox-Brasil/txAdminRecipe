@@ -34,14 +34,14 @@ tasks:
     file: ./tmp/qbox/mriqbox.sql
 
   # CFX-DEFAULT fork
-  - action: download_github
-    src: https://github.com/mri-Qbox-Brasil/cfx-server-data
-    subpath: resources
-    dest: ./resources/[cfx-default]
   # - action: download_github
-  #   src: https://github.com/citizenfx/cfx-server-data
+  #   src: https://github.com/mri-Qbox-Brasil/cfx-server-data
   #   subpath: resources
   #   dest: ./resources/[cfx-default]
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    subpath: resources
+    dest: ./resources/[cfx-default]
 
   # STANDALONE
   - action: download_github
@@ -91,7 +91,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/scully_emotemenu
     ref: main
-    src: https://github.com/Scullyy/scully_emotemenu
+    src: https://github.com/mri-Qbox-Brasil/scully_emotemenu
 
   - action: download_github
     dest: ./resources/[standalone]/PolyZone
