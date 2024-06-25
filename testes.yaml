@@ -663,6 +663,11 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/mri_QexoticPaints
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qfarm
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qfarm
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qfleecaheist
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qfleecaheist
@@ -706,6 +711,11 @@ tasks:
     dest: ./resources/[mri]/mri_Qpaintjob
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qpaintjob
+
+  - action: download_github
+    dest: ./resources/[mri]/mri_Qpets
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qpets
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qrobnpcs
@@ -1016,6 +1026,12 @@ tasks:
     dest: ./resources/[mri]/[randol]/randol_stresszones
     ref: main
     src: https://github.com/mri-Qbox-Brasil/randol_stresszones
+
+  # ADDONS
+  - action: download_github
+    dest: ./resources/[addons]
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/addons
 
   # Clean up
   - action: remove_path
