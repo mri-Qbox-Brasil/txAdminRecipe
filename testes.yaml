@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: mri_Qbox
-version: 1.0.3
+version: 2.2.1
 author: QBCore Brasil
 description: Um projeto brasileiro baseado na framework Qbox.
 
@@ -34,14 +34,14 @@ tasks:
     file: ./tmp/qbox/mriqbox.sql
 
   # CFX-DEFAULT fork
-  # - action: download_github
-  #   src: https://github.com/mri-Qbox-Brasil/cfx-server-data
-  #   subpath: resources
-  #   dest: ./resources/[cfx-default]
   - action: download_github
-    src: https://github.com/citizenfx/cfx-server-data
+    src: https://github.com/mri-Qbox-Brasil/cfx-server-data
     subpath: resources
     dest: ./resources/[cfx-default]
+  # - action: download_github
+  #   src: https://github.com/citizenfx/cfx-server-data
+  #   subpath: resources
+  #   dest: ./resources/[cfx-default]
 
   # STANDALONE
   - action: download_github
