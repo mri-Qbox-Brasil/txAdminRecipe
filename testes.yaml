@@ -33,6 +33,9 @@ tasks:
   - action: query_database
     file: ./tmp/qbox/mriqbox.sql
 
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
   # CFX-DEFAULT fork
   - action: download_github
     src: https://github.com/mri-Qbox-Brasil/cfx-server-data
