@@ -68,7 +68,7 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/fmsdk.zip
-    
+
   - action: download_file
     path: ./tmp/discord-screenshot-1.3.7.zip
     url: https://github.com/jaimeadf/discord-screenshot/releases/download/1.3.7/discord-screenshot-1.3.7.zip
@@ -116,7 +116,7 @@ tasks:
   #   url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
   # - action: unzip
   #   dest: ./resources/[standalone]
-  #   src: ./tmp/Renewed-Banking.zip 
+  #   src: ./tmp/Renewed-Banking.zip
 
   - action: download_github
     dest: ./resources/[standalone]/illenium-appearance
@@ -157,12 +157,17 @@ tasks:
     dest: ./resources/[standalone]/bl_bridge
     ref: main
     src: https://github.com/mri-Qbox-Brasil/bl_bridge
-    
+
     # VOICE
+#   - action: download_github
+#     dest: ./resources/[voice]/pma-voice
+#     ref: main
+#     src: https://github.com/AvarianKnight/pma-voice
+
   - action: download_github
     dest: ./resources/[voice]/pma-voice
     ref: main
-    src: https://github.com/AvarianKnight/pma-voice
+    src: https://github.com/mri-Qbox-Brasil/pma-voice
 
   # - action: download_github
   #   dest: ./resources/[voice]/qbx_radio
@@ -554,7 +559,7 @@ tasks:
     src: ./resources/[npwd]/qbx_npwd/config.json
     dest: ./resources/[npwd]/npwd/config.json
     overwrite: true
-    
+
   - action: waste_time # prevent github throttling
     seconds: 10
 
@@ -611,7 +616,7 @@ tasks:
     dest: ./resources/[mri]/mri_Qadmin
     ref: master
     src: https://github.com/mur4i/mri_Qadmin
-    
+
   - action: download_github
     dest: ./resources/[mri]/mri_Qbackpack
     ref: main
@@ -941,7 +946,7 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
 
-  ## MRI / PICKLE 
+  ## MRI / PICKLE
   - action: download_github
     dest: ./resources/[mri]/[pickle]/pickle_prisons
     ref: main
@@ -954,7 +959,7 @@ tasks:
     dest: ./resources/[mri]/[pickle]/pickle_waypoints
     ref: main
     src: https://github.com/mri-Qbox-Brasil/pickle_waypoints
-    
+
   # - action: download_github
   #   dest: ./resources/[mri]/[pickle]/pickle_weaponthrowing
   #   ref: main
@@ -1004,12 +1009,12 @@ tasks:
     dest: ./resources/[mri]/[randol]/randol_cityworker
     ref: main
     src: https://github.com/mri-Qbox-Brasil/randol_cityworker
-    
+
   - action: download_github
     dest: ./resources/[mri]/[randol]/randol_exporting
     ref: main
     src: https://github.com/mri-Qbox-Brasil/randol_exporting
-    
+
   - action: download_github
     dest: ./resources/[mri]/[randol]/randol_ghosthunting
     ref: main
