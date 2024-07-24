@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: mri_Qbox
-version: 3.0.1
+version: 3.0.2
 author: QBCore Brasil
 description: Um projeto brasileiro baseado na framework Qbox.
 
@@ -87,6 +87,11 @@ tasks:
     dest: ./resources/[standalone]/mhacking
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mhacking
+
+  - action: download_github
+    dest: ./resources/[standalone]/fm-logs
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/fm-logs
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -631,6 +636,11 @@ tasks:
     file: ./resources/[mri]/mri_Qblips/db/blips.sql
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qboombox
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qboombox
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qbox
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qbox
@@ -1028,6 +1038,11 @@ tasks:
     dest: ./resources/[mri]/[randol]/randol_cityworker
     ref: main
     src: https://github.com/mri-Qbox-Brasil/randol_cityworker
+
+  - action: download_github
+    dest: ./resources/[mri]/[randol]/randol_combatlog
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/randol_combatlog
 
   - action: download_github
     dest: ./resources/[mri]/[randol]/randol_exporting
