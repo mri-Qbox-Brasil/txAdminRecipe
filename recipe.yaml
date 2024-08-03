@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: mri_Qbox
-version: 3.0.2
+version: 3.0.3
 author: QBCore Brasil
 description: Um projeto brasileiro baseado na framework Qbox.
 
@@ -959,21 +959,21 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/maji-gasdelivery
 
   ## MRI / PEFCL
-  - action: download_file
-    path: ./tmp/pefcl.zip
-    url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
+  # - action: download_file
+  #   path: ./tmp/pefcl.zip
+  #   url: https://github.com/mri-Qbox-Brasil/pefcl/releases/latest/download/pefcl.zip
 
-  - action: unzip
-    dest: ./resources/[mri]/[pefcl]
-    src: ./tmp/pefcl.zip
+  # - action: unzip
+  #   dest: ./resources/[mri]/[pefcl]
+  #   src: ./tmp/pefcl.zip
 
-  - action: query_database
-    file: ./resources/[mri]/[pefcl]/pefcl/import.sql
+  # - action: query_database
+  #   file: ./resources/[mri]/[pefcl]/pefcl/import.sql
 
-  - action: download_github
-    dest: ./resources/[mri]/[pefcl]/qbx_pefcl
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
+  # - action: download_github
+  #   dest: ./resources/[mri]/[pefcl]/qbx_pefcl
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_pefcl
 
   ## MRI / PICKLE
   - action: download_github
@@ -1017,6 +1017,14 @@ tasks:
 
   - action: query_database
     file: ./resources/[mri]/[ps]/ps-mdt/mdt.sql
+
+  - action: download_github
+    dest: ./resources/[mri]/[ps]/ps-banking
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ps-banking
+
+  - action: query_database
+    file: ./resources/[mri]/[ps]/ps-banking/ps-banking.sql
 
   ## MRI / RANDOLIO
   - action: download_github
