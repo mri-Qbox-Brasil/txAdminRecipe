@@ -50,7 +50,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
-    src: https://github.com/Bob74/bob74_ipl
+    src: https://github.com/mri-Qbox-Brasil/bob74_ipl
 
   - action: download_github
     dest: ./resources/[standalone]/fivem-freecam
