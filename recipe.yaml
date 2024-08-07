@@ -512,7 +512,7 @@ tasks:
   - action: download_github
     dest: ./resources/[ox]/ox_target
     ref: main
-    src: https://github.com/overextended/ox_target
+    src: https://github.com/mri-Qbox-Brasil/ox_target
 
   - action: download_file
     path: ./tmp/oxmysql.zip
