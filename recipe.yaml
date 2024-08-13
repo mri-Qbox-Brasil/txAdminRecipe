@@ -528,16 +528,16 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_doorlock.zip
 
-  - action: download_file
-    path: ./tmp/ox_inventory.zip
-    url: https://github.com/mri-Qbox-Brasil/ox_inventory/releases/latest/download/ox_inventory.zip
-  - action: unzip
-    dest: ./resources/[ox]
-    src: ./tmp/ox_inventory.zip
-#   - action: download_github
-#     dest: ./resources/[ox]/ox_inventory
-#     ref: main
-#     src: https://github.com/mri-Qbox-Brasil/ox_inventory
+  # - action: download_file
+  #   path: ./tmp/ox_inventory.zip
+  #   url: https://github.com/mri-Qbox-Brasil/ox_inventory/releases/latest/download/ox_inventory.zip
+  # - action: unzip
+  #   dest: ./resources/[ox]
+  #   src: ./tmp/ox_inventory.zip
+  - action: download_github
+    dest: ./resources/[ox]/ox_inventory
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ox_inventory
 
   # - action: download_github
   #   dest: ./resources/[ox]/ox_fuel
