@@ -499,7 +499,7 @@ tasks:
   # OX
   - action: download_file
     path: ./tmp/ox_lib.zip
-    url: https://github.com/mur4i/ox_lib-mri-redesign/releases/latest/download/ox_lib.zip
+    url: https://github.com/mri-Qbox-Brasil/ox_lib-mri-redesign/releases/latest/download/ox_lib.zip
   - action: unzip
     dest: ./resources/[ox]
     src: ./tmp/ox_lib.zip
