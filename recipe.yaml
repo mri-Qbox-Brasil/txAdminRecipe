@@ -340,10 +340,10 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/qbx_streetraces
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_storerobbery
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/qbx_storerobbery
+  # - action: download_github
+  #   dest: ./resources/[qbx]/qbx_storerobbery
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/qbx_storerobbery
 
   # - action: download_github
   #   dest: ./resources/[qbx]/qbx_spawn
