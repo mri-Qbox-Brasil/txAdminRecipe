@@ -905,6 +905,11 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/ND_Police
 
+  - action: download_github
+    dest: ./resources/[mri]/[ND]/ND_GunAnims
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/ND_GunAnims
+
   ## MRI / OUTROS
   - action: download_github
     dest: ./resources/[mri]/[outros]/angelicxs-CivilianJobs
