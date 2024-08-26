@@ -612,10 +612,10 @@ tasks:
   #   ref: main
   #   src: https://github.com/mri-Qbox-Brasil/mri_Qairbags
 
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qadmin
-    ref: master
-    src: https://github.com/mur4i/mri_Qadmin
+  # - action: download_github
+  #   dest: ./resources/[mri]/mri_Qadmin
+  #   ref: master
+  #   src: https://github.com/mur4i/mri_Qadmin
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qbackpack
