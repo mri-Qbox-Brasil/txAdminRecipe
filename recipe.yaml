@@ -686,6 +686,11 @@ tasks:
     src: https://github.com/mri-Qbox-Brasil/mri_Qfleecaheist
 
   - action: download_github
+    dest: ./resources/[mri]/mri_Qfps
+    ref: main
+    src: https://github.com/mri-Qbox-Brasil/mri_Qfps
+
+  - action: download_github
     dest: ./resources/[mri]/mri_Qhud
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qhud
