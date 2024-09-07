@@ -635,10 +635,18 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_Qboombox
 
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qbox
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/mri_Qbox
+  # - action: download_github
+  #   dest: ./resources/[mri]/mri_Qbox
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/mri_Qbox
+
+  - action: download_file
+    path: ./tmp/mri_Qbox.zip
+    url: https://github.com/mri-Qbox-Brasil/mri_Qbox/releases/latest/download/mri_Qbox.zip
+
+  - action: unzip
+    dest: ./resources/[mri]
+    src: ./tmp/mri_Qbox.zip
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qcarkeys
