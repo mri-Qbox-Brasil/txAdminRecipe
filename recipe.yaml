@@ -564,27 +564,27 @@ tasks:
     seconds: 10
 
   # NPWD APPS
-  # - action: download_file
-  #   path: ./tmp/npwd_qbx_garages.zip
-  #   url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
-  # - action: unzip
-  #   dest: ./resources/[npwd-apps]
-  #   src: ./tmp/npwd_qbx_garages.zip
+  - action: download_file
+    path: ./tmp/npwd_qbx_garages.zip
+    url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
+  - action: unzip
+    dest: ./resources/[npwd-apps]
+    src: ./tmp/npwd_qbx_garages.zip
   # - action: download_github
   #   dest: ./resources/[npwd-apps]/npwd_qbx_garages
   #   ref: main
   #   src: https://github.com/mri-Qbox-Brasil/npwd_qbx_garages
 
-  # - action: download_file
-  #   path: ./tmp/npwd_qbx_mail.zip
-  #   url: https://github.com/Qbox-project/npwd_qbx_mail/releases/latest/download/npwd_qbx_mail.zip
-  # - action: unzip
-  #   dest: ./resources/[npwd-apps]
-  #   src: ./tmp/npwd_qbx_mail.zip
-  - action: download_github
-    dest: ./resources/[npwd-apps]/npwd_qbx_mail
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/npwd_qbx_mail
+  - action: download_file
+    path: ./tmp/npwd_qbx_mail.zip
+    url: https://github.com/Qbox-project/npwd_qbx_mail/releases/latest/download/npwd_qbx_mail.zip
+  - action: unzip
+    dest: ./resources/[npwd-apps]
+    src: ./tmp/npwd_qbx_mail.zip
+  # - action: download_github
+  #   dest: ./resources/[npwd-apps]/npwd_qbx_mail
+  #   ref: main
+  #   src: https://github.com/mri-Qbox-Brasil/npwd_qbx_mail
 
   # MRI
   # - action: download_github
