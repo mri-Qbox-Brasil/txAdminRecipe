@@ -64,7 +64,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/fmsdk.zip
-    url: https://github.com/fivemanage/sdk/releases/download/v2.1.1/fmsdk.zip
+    url: https://github.com/fivemanage/sdk/releases/latest/download/fmsdk.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/fmsdk.zip
