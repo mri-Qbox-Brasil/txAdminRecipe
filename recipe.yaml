@@ -564,12 +564,12 @@ tasks:
     seconds: 10
 
   # NPWD APPS
-  - action: download_file
-    path: ./tmp/npwd_qbx_garages.zip
-    url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
-  - action: unzip
-    dest: ./resources/[npwd-apps]
-    src: ./tmp/npwd_qbx_garages.zip
+  # - action: download_file
+  #   path: ./tmp/npwd_qbx_garages.zip
+  #   url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
+  # - action: unzip
+  #   dest: ./resources/[npwd-apps]
+  #   src: ./tmp/npwd_qbx_garages.zip
   # - action: download_github
   #   dest: ./resources/[npwd-apps]/npwd_qbx_garages
   #   ref: main
