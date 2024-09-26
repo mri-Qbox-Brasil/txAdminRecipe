@@ -683,10 +683,13 @@ tasks:
     ref: main
     src: https://github.com/mri-Qbox-Brasil/mri_QexoticPaints
 
-  - action: download_github
-    dest: ./resources/[mri]/mri_Qfarm
-    ref: main
-    src: https://github.com/mri-Qbox-Brasil/mri_Qfarm
+  - action: download_file
+    path: ./tmp/mri_Qfarm.zip
+    url: https://github.com/mri-Qbox-Brasil/mri_Qfarm/releases/latest/download/mri_Qfarm.zip
+
+  - action: unzip
+    dest: ./resources/[mri]
+    src: ./tmp/mri_Qfarm.zip
 
   - action: download_github
     dest: ./resources/[mri]/mri_Qfleecaheist
