@@ -9,7 +9,7 @@ tasks:
   #  Download Base Files
   - action: download_github
     src: https://github.com/mri-Qbox-Brasil/txAdminRecipe
-    ref: main
+    ref: mri
     dest: ./tmp/qbox
 
   - action: move_path
